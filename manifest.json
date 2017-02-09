@@ -1,0 +1,13 @@
+{
+  "name": "Mejora Tu Ciudad",
+  "short_name": "MTC",
+  "icons": [{
+    "src": "images/iyc-icon.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "940701779974",
+  "gcm_user_visible_only": true
+}

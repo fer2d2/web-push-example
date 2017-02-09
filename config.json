@@ -1,0 +1,10 @@
+{
+  "gcmApiKey": "AAAA2wYyCAY:APA91bFYZlhMDlYvNkkSwd4-DSK0byA__4L2Tnd9lqnIfGD8DYTr36Zeg7_d75S-yod-ju-iY4fIWbRZ6H09Bza09VCwTxV0GU0bU5njzJ0NY7Y35f1au_Qu9d7Sr-YUF7icwsqiialb",
+  "vapid": {
+    "publicKey": "BJvO-4kM8PKTOl74PxTqEW8Pkt6pUAn7fzqb-YSd3wAoGMp_koXFu4lFaFrFMGd_jO4xNQtnERi5F_dR9D6fki8",
+    "privateKey": "o6urpM02rInlH3YfRp1YLR2dIgLMcno5m0nSJ7reuZ8"
+  },
+  "server": {
+    "port": 8080
+  }
+}
