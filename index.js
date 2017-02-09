@@ -48,7 +48,7 @@ app.post('/subscribe', function(request, response) {
 app.post('/push', (request, response) => {
   console.info("Calling [POST] /push");
 
-  const message = request.param('message');
+  const message = request.body.message;
 
   webpush.setGCMAPIKey(config.gcmApiKey);
 
@@ -69,6 +69,7 @@ app.post('/push', (request, response) => {
         options
       );
     });
+
   }, 0);
 
   response.send('OK');
