@@ -34,7 +34,10 @@ navigator.serviceWorker.ready.then((serviceWorkerRegistration) => {
   .subscribe({
     userVisibleOnly: true,
     applicationServerKey: Window.vapidPublicKey
-  }).then((subscription) => {
+  });
+
+  serviceWorkerRegistration.pushManager.getSubscription()
+  .then((subscription) => {
     console.info(subscription);
 
     $.ajax({
@@ -44,6 +47,5 @@ navigator.serviceWorker.ready.then((serviceWorkerRegistration) => {
       contentType:"application/json",
       dataType:"json"
     });
-
   });
 });

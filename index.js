@@ -37,6 +37,7 @@ app.get('/', (request, response) => {
 });
 
 app.post('/subscribe', function(request, response) {
+  console.info("Calling [POST] /subscribe");
   let subscription = request.body;
   subscriptions.pushIfNotExist(subscription, (sub) => {
     return sub.endpoint === subscription.endpoint;
